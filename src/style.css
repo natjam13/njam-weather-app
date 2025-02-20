@@ -27,9 +27,10 @@ p {
 }
 
 header {
-    border-bottom: 1px solid #5f6368;
-    padding-bottom: 30px;
+    border-bottom: 1px solid #abcecf;
+    padding-bottom: 50px;
 }
+
 
 .search-input {
     background-color: #abcecf;
@@ -39,30 +40,29 @@ header {
     font-size: 16px;
     font-weight: 500px;
     padding: 10px 16px;
-    padding-right: 45px;
+    padding-right: 40px;
+    position: relative;
     transition: 0.25s border;
-    width: 600px;
+    width: 100%;
    
 }
 .search-input:focus{
      border: 3px solid rgb(0, 0, 0, 0.15);
  }
-.search-button {
-    background-color: #abcecf;
-    border: none;
-    display: flex;
-    padding:14px;
-    position: absolute;
-    right:16px;
-    transform: translateY(-25);
-    width:max-content;
-                 
-}
-.search-icon{
-    align-items: right;
-}
 
-main {
+.search-button{
+    background-color:transparent;
+    border: none;
+    top: 24px;
+    cursor:pointer;
+    display: flex;
+    padding: 10px 16px;
+    position: absolute; 
+    right:16px;
+    transform:translateY(0%);
+
+}
+.main {
     padding: 40 px 0;
     color: #abcecf;
    
@@ -70,6 +70,7 @@ main {
 
 .current-temperature {
     font-size: 48px;
+    color:#abcecf;
 }
 
 .current-weather {
@@ -79,6 +80,8 @@ main {
 }
 
 .current-city {
+
+    color: #abcecf;
     font-size: 38px;
     font-weight: 900;
     margin: 0;
