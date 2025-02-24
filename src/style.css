@@ -3,126 +3,144 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(10px);
     box-sizing: border-box;
-    height: 100%;
     font-family: "poppin", sans-serif;
-    width: center;
+    justify-content: center;
+    padding: 400px;
+    width:300px;
 }
+
+body::before {
+    background :rgb(0, 0, 0, 0.15);
+    backdrop-filter: blur(15px);
+    position: relative;
+    }
+  
+main {
+    padding: 20px;
+
+}
+
+.main-container{
+    background:linear-gradient(to top, rgb(0 ,0,0,0.15),rgb(255,255.255.0.15));
+    backdrop-filter:blur(100px);
+    border-bottom: 1px solid #f9f7fe;
+    border-radius: 12px;
+    height: 400px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    width: 500px;
+}
+
+.city-input {
+    background-color: #abcecf;
+    border: 3px solid transparent;
+    border-radius: 99px;
+    color: rgba(39, 33, 66, 0.4);
+    display: center;
+    font-size: 16px;
+    font-weight: 500px;
+    outline: none;
+    padding: 10px 16px;
+    padding-right: 40px;
+    transition: 0.25s border;
+    width: 90%;
+}
+
+.city-input::placeholder {
+
+    color: black;
+}
+
+.search-input:focus {
+
+    border: 3px solid rgb(0, 0, 0, 0.15);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    top: 6%;
+    cursor: pointer;
+    display: flex;
+    padding: -5px 20px;
+    position: absolute;
+    right: 30px;
+    transform: translateY (-50%);
+
+}
+
 a {
     color: #5f6368;
 }
 p {
     color:#5f6368;
-}
-.weather-app {
-    background: rgb(0, 0, 0, 0.15);
-    backdrop-filter: blur(100px);
-    height: 385px;
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-}
-
-header {
-    border-bottom: 1px solid #abcecf;
-    padding-bottom: 50px;
+    font-size: 15px;
 }
 
 
-.search-input {
-    background-color: #abcecf;
-    border: 3px solid transparent;
-    border-radius: 99px;
-    color: rgba(39, 33, 66, 0.4);
-    font-size: 16px;
-    font-weight: 500px;
-    padding: 10px 16px;
-    padding-right: 40px;
-    position: relative;
-    transition: 0.25s border;
-    width: 100%;
-   
-}
-.search-input:focus{
-     border: 3px solid rgb(0, 0, 0, 0.15);
- }
-
-.search-button{
-    background-color:transparent;
-    border: none;
-    top: 24px;
-    cursor:pointer;
-    display: flex;
-    padding: 10px 16px;
-    position: absolute; 
-    right:16px;
-    transform:translateY(0%);
-
-}
-.main {
-    padding: 40 px 0;
+.weather-app-data {
     color: #abcecf;
-   
-}
-
-.current-temperature {
-    font-size: 48px;
-    color:#abcecf;
-}
-
-.current-weather {
     display: flex;
     justify-content: space-between;
-   
 }
 
-.current-city {
-
-    color: #abcecf;
-    font-size: 38px;
-    font-weight: 900;
-    margin: 0;
-}
-
-.current-details {
-   
-    color: #abcecf;
+.weather-app-details {
     font-size: 16px;
-    font-weight: 400;
+    
+
+}
+.weather-app-city {
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.weather-app-details-strong {
+    font-size: 16px;
+    color: rgba(39, 33, 66, 0.4);
     line-height: 24px;
+    font-weight: 500;
 }
 
-.current-details strong {
 
-color: #abcecf;
+.weather-app-temperature-container {
+    color:#abcecf;
+    display: flex;
+   
+
 }
 
-.current-temperature-icon {
-    position: relative;
-    top: -8px;
-    font-size: 40px;
-    margin-right: 10px;
+.weather-app-icon{
+    width: 88px;
+   height: 88px;
 }
 
-.current-temperature-value {
-    font-size: 80px;
+.weather-app-temperature {
+    font-size: 88px;
+    line-height: 88px;
     font-weight: bold;
+    position: right;
 }
 
-.current-temperature-unit {
+
+.weather-app-unit{
+    align-items: right;
     font-size: 28px;
     position: relative;
-    top: -38px;
+    
 }
 
 footer {
     border-top: 1px solid #f9f7fe;
-    font-size: 17px;
     text-align: center;
-    padding-top: 50px;
-
+    font-size:32px;
+    letter-spacing: -1.2px;
+    padding-top:40px;
     color: rgba(39, 33, 66, 0.4);
-}
+    }
+ 
